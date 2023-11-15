@@ -1,3 +1,10 @@
-const Menu = ["Za", "Eminems"];
-const Name = "Denizee";
-export {Menu, Name};
+const Menu = [
+    {
+        Name:
+        Type
+
+    }
+
+    
+];
+export {Menu};

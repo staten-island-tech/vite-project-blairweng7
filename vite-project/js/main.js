@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { setupCounter } from '../counter.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -22,3 +22,6 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+document.querySelector(".btn").addEventListener("click", function(){
+  
+})
