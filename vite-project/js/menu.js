@@ -100,4 +100,3 @@ const Menu = [
   // Accessing individual items in the menu array
   console.log(menu[0]); // Print details of the first menu item (Classic Burger)
   
-export {Menu};
