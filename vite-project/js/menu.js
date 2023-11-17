@@ -94,9 +94,33 @@ const Menu = [
       vegetarian: true,
       glutenFree: false,
       spicy: false
+    },
+    {
+      name: "",
+      description: "",
+      price: 10.99,
+      vegetarian: true,
+      glutenFree: false,
+      spicy: false
+    },
+    {
+      name: "",
+      description: "",
+      price: 10.99,
+      vegetarian: true,
+      glutenFree: false,
+      spicy: false
+    },
+    {
+      name: "",
+      description: "",
+      price: 10.99,
+      vegetarian: true,
+      glutenFree: false,
+      spicy: false
     }
   ];
   
-  // Accessing individual items in the menu array
-  console.log(menu[0]); // Print details of the first menu item (Classic Burger)
-  
+  Menu.forEach(element => {
+  vegetarian == true
+  });
