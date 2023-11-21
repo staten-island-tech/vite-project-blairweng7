@@ -86,6 +86,7 @@ const Menu = [
       vegetarian: true,
       glutenFree: false,
       spicy: false
+    
     },
     {
       name: "Chocolate Brownie Sundae",
@@ -121,6 +122,16 @@ const Menu = [
     }
   ];
   
-  Menu.forEach(element => {
-  vegetarian == true
+  const veg = colors.filter((vg)=> {
+    return vg.vegetarian === true
+  })
+  console.log(veg)
+  
+  const notveg = colors.filter((vg1)=> {
+    return vg1.vegetarian === false
+  })
+  console.log(notveg)
+
+  menu.forEach((el) => {
+    
   });

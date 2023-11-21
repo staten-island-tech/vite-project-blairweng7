@@ -26,3 +26,22 @@ setupCounter(document.querySelector('#counter'))
 document.querySelector(".btn").addEventListener("click", function(){
   
 })
+
+DOMSelectors.form.addEventListener("#btn", function (event) {
+  event.preventDefault();
+  addcard();
+});
+
+function addcard() {
+  DOMSelectors.box.insertAdjacentHTML(
+    "afterend",
+    `<div class="card" id="box">
+        <h1 class="menu-food"> ${DOMSelectors.food} </h1>
+        <h3 class="food-desc"> ${DOMSelectors.description} </h3>
+        <img src= "${DOMSelectors.img}" alt="image" class="card-image">
+        </div>`,
+        console.log(menu)
+  );
+}
+
+
