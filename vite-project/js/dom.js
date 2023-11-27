@@ -1,6 +1,6 @@
 const DOMSelectors = {
   form: document.querySelector("#form"),
-  container: document.getElementById("container"),
+  container: document.getElementById("#container"),
   card: DOMSelectors.querySelector('#box'),
   all: DOMSelectors.querySelector("#all-btn"),
   breakfast: DOMSelectors.querySelector("#breakfast-btn"),

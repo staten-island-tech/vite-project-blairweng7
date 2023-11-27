@@ -11,16 +11,26 @@ const types = {
   under10: Menu.filter((cost)=> cost.price <= 10),
   over10: Menu.fitler((cost)=> cost.price > 10),
 }
-function addcard() {
+
+DOMSelectors.form.addEventListener("submit", function (event) {
+  event.preventDefault(); 
+});
+
+function addcard(card) {
+
   DOMSelectors.container.insertAdjacentHTML(
-    'afterend'
-    `
-    div "class"= card id="box"
+    'afterbegin',
+    `S
+    <div class="gallery" id="container">
+    <h1 class="food-name"> ${card.name}</h1>
+    <h2 class="image"> ${card.img}</h2>
+    <h3 class="price"> ${card.price}</h3>
+  </div>
     
     `
   )
 }
-
+Menu.forEach(el => addcard(el))
 
 
 /*document.querySelector('#app').innerHTML = `
