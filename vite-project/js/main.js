@@ -1,6 +1,6 @@
-import '../css/variables.css'
+import '../css/variables.css';
 import { Menu } from './menu';
-import { DOMSelectors } from './dom'
+import { DOMSelectors } from './dom';
 
 //button filtering
 const types = {
@@ -33,36 +33,36 @@ arr.forEach((Food)=> {
 addcard(Menu);
 
 function remove(){
-  const cards = document.querySelector(".gallery");
+  const cards = document.querySelectorAll("#container");
   cards.forEach((gallery)=> gallery.remove())
 }
 
 DOMSelectors.all.addEventListener("click", function(){
   remove(); 
-  addcardcard.all();
+  addcardcard.all(Menu);
   types.all;
 });
 
 DOMSelectors.breakfast.addEventListener("click", function(){
   remove();
-  addcard.breakfast();
+  addcard.breakfast(Menu);
   types.breakfast;
 });
 
 DOMSelectors.lunch.addEventListener("click", function(){
   remove();
-  addcard.lunch();
+  addcard.lunch(Menu);
   types.lunch;
 });
 
 DOMSelectors.vegetarian.addEventListener("click", function(){
   remove();
-  addcard.vegetarian();
+  addcard.vegetarian(Menu);
   types.vegetarian;
 });
 
 DOMSelectors.drink.addEventListener("click", function(){
   remove();
-  addcard.drink();
+  addcard.drink(Menu);
   types.drink;
 })
