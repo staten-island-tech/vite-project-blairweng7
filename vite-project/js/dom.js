@@ -7,10 +7,9 @@ const DOMSelectors = {
   lunch: DOMSelectors.querySelector("#lunch-btn"),
   dinner: DOMSelectors.querySelector("#dinner-btn"),
   vegetarian: DOMSelectors.querySelector("#vegetarian-btn"),
-  under10: DOMSelectors.querySelector("#under10-btn"),
-  over10: DOMSelectors.querySelector("#over10-btn"),
   drink: DOMSelectors.querySelector("#drink-btn"),
   dessert: DOMSelectors.querySelector("#dessert-btn"),
 };
+console.log(DOMSelectors);
 
 export { DOMSelectors };
