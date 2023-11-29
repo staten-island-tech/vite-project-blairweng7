@@ -1,0 +1,120 @@
+html,
+body,
+*{
+  margin: 0rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+:root {
+   
+   /*colors*/
+    --dark-blue: #12376f;
+    --light-pink: #f0d1c8;
+    --light-green:#B2AC88;
+    --off-white: #FAF9F6;
+    --black: #000
+
+/*Intentions*/
+--primary: var(--light-pink)
+--secondary: var(--light-green);
+
+
+/*Typography*/
+    --h1: 7.594rem;
+    --h2: 5.063rem;
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem;
+    --h6: 1rem;
+}
+
+
+.lightmode {
+    --primary: var(--light-pink);
+    --secondary: var(--light-green);
+    --card: var(--off-white)
+}
+.darkmode {
+    --primary:var(--dark-blue);
+    --secondary: var(--black);
+    --card: var(--off-white)
+}
+body {
+    background-color: var(--primary);
+}
+
+.header-text {
+    font-size: var(--h2);
+    padding: 0;
+    margin: 1rem auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+h2 {
+    font-size: var(--h2);
+}
+h3 {
+    font-size: var(--h3);
+}
+h4 {
+    font-size: var(--h4);
+}
+h5 {
+    font-size: var(--h5);
+}
+h6 {
+    font-size: var(--h6);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem auto;
+}
+.card {
+    height: 50vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 1rem auto;
+    background-color: var(--off-white);
+    border-radius: 1rem;
+}
+.card-img{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    object-fit: inherit;
+}
+.buttons {
+    
+    padding: 1rem auto;
+    margin: 1rem 1rem 1rem auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.filter-btns{
+    display: flex;
+}

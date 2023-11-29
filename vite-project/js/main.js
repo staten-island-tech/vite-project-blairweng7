@@ -1,68 +1,50 @@
-import '../css/variables.css';
+import '../css/style.css';
 import { Menu } from './menu';
 import { DOMSelectors } from './dom';
 
-//button filtering
-const types = {
-  breakfast: Menu.filter((breakfast)=> breakfast.type === 'breakfast'), 
-  lunch: Menu.filter((lunch)=> lunch.type === 'lunch'),
-  dinner: Menu.filter((dinner)=> dinner.type === 'dinner'),
-  dessert: Menu.filter((dessert)=> dessert.type === 'dessert'),
-  vegetarian: Menu.filter((vegetarian)=> vegetarian.vegetarian === true),
-  drink: Menu.filter((drink)=> drink.type === 'drink'),
-}
-//button
-DOMSelectors.form.addEventListener("submit", function (event) {
-  event.preventDefault(); 
-});
+//theme button
+document.getElementById("Theme").addEventListener("click", function(){
+  if(document.body.classList.contains("lightmode")){
+    document.body.classList.add("darkmode");
+     document.body.classList.remove("lightmode");
+   } else{
+    document.body.classList.add("lightmode")
+    document.body.classList.remove("darkmode")
+   }
+ });
+
 
 //cards
-function addcard(arr) {
-arr.forEach((Food)=> {
-  document.querySelector('.flex-container').insertAdjacentElement("afterbegin",
-  `
-    <div class="gallery" id="container">
-    <h1 class="food-name"> ${Food.name}</h1>
-   <img src="${Food.img}" alt="" class="card-img">
-    <h3 class="price"> ${Food.price}</h3>
+function addcards (arr){
+  arr.forEach((ugh) => {
+    DOMSelectors.container.insertAdjacentHTML("afterend", 
+    `
+    <div class="card">
+    <h4 class="food-name"> ${ugh.name}</h4>
+   <img src="${ugh.img}" alt="" class="card-img">
+    <h5 class="price"> ${ugh.price}</h5>
   </div>
     `
-  )
-})
+)})};
+addcards(Menu)
+console.log(Menu)
+
+function removeCards(){
+  const clear = document.getElementById("container");
+  clear.innerHTML = ""
 };
-addcard(Menu);
+//buttons 
+let buttons = document.querySelectorAll(".filterButton")
 
-function remove(){
-  const cards = document.querySelectorAll("#container");
-  cards.forEach((gallery)=> gallery.remove())
-}
+buttons.forEach((buttons) => buttons.addEventListener("click", function(){
+  let type = buttons.textContent;
+  let newArr = Menu.filter((food) => food.name === type);
+  removeCards();
+  addcards(newArr);
+}))
 
-DOMSelectors.all.addEventListener("click", function(){
-  remove(); 
-  addcardcard.all(Menu);
-  types.all;
-});
-
-DOMSelectors.breakfast.addEventListener("click", function(){
-  remove();
-  addcard.breakfast(Menu);
-  types.breakfast;
-});
-
-DOMSelectors.lunch.addEventListener("click", function(){
-  remove();
-  addcard.lunch(Menu);
-  types.lunch;
-});
-
-DOMSelectors.vegetarian.addEventListener("click", function(){
-  remove();
-  addcard.vegetarian(Menu);
-  types.vegetarian;
-});
-
-DOMSelectors.drink.addEventListener("click", function(){
-  remove();
-  addcard.drink(Menu);
-  types.drink;
+DOMSelectors.form.addEventListener("click", function(event){
+  event.preventDefault();
+  removeCards();
+  addcards(Menu);
 })

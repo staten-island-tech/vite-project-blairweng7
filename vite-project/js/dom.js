@@ -1,15 +1,15 @@
 const DOMSelectors = {
-  form: document.querySelector("#form"),
-  container: document.getElementById("#container"),
-  card: DOMSelectors.querySelector('#box'),
-  all: DOMSelectors.querySelector("#all-btn"),
-  breakfast: DOMSelectors.querySelector("#breakfast-btn"),
-  lunch: DOMSelectors.querySelector("#lunch-btn"),
-  dinner: DOMSelectors.querySelector("#dinner-btn"),
-  vegetarian: DOMSelectors.querySelector("#vegetarian-btn"),
-  drink: DOMSelectors.querySelector("#drink-btn"),
-  dessert: DOMSelectors.querySelector("#dessert-btn"),
+  container: document.getElementById("container"),
+  breakfast: document.getElementById("breakfast"),
+  lunch: document.getElementById("lunch"),
+  dinner: document.getElementById("dinner"),
+  vegetarian: document.getElementById("vegetarian"),
+  dessert: document.getElementById("dessert"),
+  form: document.getElementById("filter-btn"),
+  cards: document.querySelector(".cards"),
+  foodName: document.querySelector(".food-name"),
+  foodImage: document.querySelector(".card-img"),
+  foodPrice: document.querySelector(".price")
 };
-console.log(DOMSelectors);
 
 export { DOMSelectors };
