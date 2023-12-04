@@ -31,20 +31,20 @@ console.log(Menu)
 
 function removeCards(){
   const clear = document.getElementById("container");
-  clear.innerHTML = ""
+  clear.insertAdjacentElement = ""
 };
 //buttons 
 let buttons = document.querySelectorAll(".filterButton")
 
-buttons.forEach((buttons) => buttons.addEventListener("click", function(){
+const filterButtons = (buttons.forEach((buttons) => buttons.addEventListener("click", function(){
   let type = buttons.textContent;
-  let newArr = Menu.filter((food) => food.name === type);
+  let newArr = Menu.filter((food) => food.type.includes(type));
   removeCards();
   addcards(newArr);
-}))
+})))
 
 DOMSelectors.form.addEventListener("click", function(event){
   event.preventDefault();
   removeCards();
-  addcards(Menu);
+  filterButtons();
 })
