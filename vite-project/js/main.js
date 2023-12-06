@@ -30,8 +30,8 @@ addcards(Menu)
 console.log(Menu)
 
 function removeCards(){
-  const clear = document.querySelector("app");
-  clear.insertAdjacentElement = ""
+  const clear = document.getElementById("container");
+  clear.insertAdjacentHTML = ""
 };
 //buttons 
 let buttons = document.querySelectorAll(".filterButton")
