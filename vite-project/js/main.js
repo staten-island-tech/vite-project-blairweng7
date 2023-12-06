@@ -30,7 +30,7 @@ addcards(Menu)
 console.log(Menu)
 
 function removeCards(){
-  const clear = document.getElementById("container");
+  const clear = document.querySelector("app");
   clear.insertAdjacentElement = ""
 };
 //buttons 
