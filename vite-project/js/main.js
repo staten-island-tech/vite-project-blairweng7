@@ -31,7 +31,7 @@ console.log(Menu)
 
 function removeCards(){
   const clear = document.getElementById("container");
-  clear.insertAdjacentHTML = ""
+  clear.insertAdjacentElement = ""
 };
 //buttons 
 let buttons = document.querySelectorAll(".filterButton")
