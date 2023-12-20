@@ -54,31 +54,31 @@ const types = {
 }
 DOMSelectors.all.addEventListener("click", function(){
   removeCards(); 
-  addcard.all(Menu);
+  addCards.all(Menu);
   types.all;
 });
 
 DOMSelectors.breakfast.addEventListener("click", function(){
   removeCards();
-  addcard.breakfast(Menu);
+  addCards.breakfast(Menu);
   types.breakfast;
 });
 
 DOMSelectors.lunch.addEventListener("click", function(){
   removeCards();
-  addcard.lunch(Menu);
+  addCards.lunch(Menu);
   types.lunch;
 });
 
 DOMSelectors.vegetarian.addEventListener("click", function(){
   removeCards();
-  addcard.vegetarian(Menu);
+  addCards.vegetarian(Menu);
   types.vegetarian;
 });
 
 DOMSelectors.drink.addEventListener("click", function(){
   removeCards();
-  addcard.drink(Menu);
+  addCards.drink(Menu);
   types.drink;
 })
 */
