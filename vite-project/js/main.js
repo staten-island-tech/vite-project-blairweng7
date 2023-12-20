@@ -53,31 +53,31 @@ const types = {
   drink: Menu.filter((drink)=> drink.type === 'drink'),
 }
 DOMSelectors.all.addEventListener("click", function(){
-  remove(); 
-  addcardcard.all(Menu);
+  removeCards(); 
+  addcard.all(Menu);
   types.all;
 });
 
 DOMSelectors.breakfast.addEventListener("click", function(){
-  remove();
+  removeCards();
   addcard.breakfast(Menu);
   types.breakfast;
 });
 
 DOMSelectors.lunch.addEventListener("click", function(){
-  remove();
+  removeCards();
   addcard.lunch(Menu);
   types.lunch;
 });
 
 DOMSelectors.vegetarian.addEventListener("click", function(){
-  remove();
+  removeCards();
   addcard.vegetarian(Menu);
   types.vegetarian;
 });
 
 DOMSelectors.drink.addEventListener("click", function(){
-  remove();
+  removeCards();
   addcard.drink(Menu);
   types.drink;
 })
