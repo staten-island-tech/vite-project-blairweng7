@@ -43,6 +43,45 @@ const filterButtons = (buttons.forEach((buttons) => buttons.addEventListener("cl
   addcards(newArr);
 })))
 
+/*
+const types = {
+  breakfast: Menu.filter((breakfast)=> breakfast.type === 'breakfast'), 
+  lunch: Menu.filter((lunch)=> lunch.type === 'lunch'),
+  dinner: Menu.filter((dinner)=> dinner.type === 'dinner'),
+  dessert: Menu.filter((dessert)=> dessert.type === 'dessert'),
+  vegetarian: Menu.filter((vegetarian)=> vegetarian.vegetarian === true),
+  drink: Menu.filter((drink)=> drink.type === 'drink'),
+}
+DOMSelectors.all.addEventListener("click", function(){
+  remove(); 
+  addcardcard.all(Menu);
+  types.all;
+});
+
+DOMSelectors.breakfast.addEventListener("click", function(){
+  remove();
+  addcard.breakfast(Menu);
+  types.breakfast;
+});
+
+DOMSelectors.lunch.addEventListener("click", function(){
+  remove();
+  addcard.lunch(Menu);
+  types.lunch;
+});
+
+DOMSelectors.vegetarian.addEventListener("click", function(){
+  remove();
+  addcard.vegetarian(Menu);
+  types.vegetarian;
+});
+
+DOMSelectors.drink.addEventListener("click", function(){
+  remove();
+  addcard.drink(Menu);
+  types.drink;
+})
+*/
 
 DOMSelectors.form.addEventListener("click", function(event){
   event.preventDefault();
